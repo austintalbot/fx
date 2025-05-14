@@ -32,29 +32,25 @@ archives:
   format_overrides:
   - goos: windows
     formats: [ zip ]
+dockers:
+- image_templates:
+  - "austintalbot/fx:{{ .Tag }}-amd64"
+
+  build_flag_templates:
+  - "--platform=linux/amd64"
+  - "--build-arg=BINARY=dist/fx_linux_amd64_v1/fx"
+- image_templates:
+  - "austintalbot/fx:{{ .Tag }}-arm64"
+  build_flag_templates:
+  - "--platform=linux/arm64"
+  - "--build-arg=BINARY=dist/fx_linux_arm64_v1/fx"
+  goarch: arm64
 
 docker_manifests:
-# You can have multiple Docker manifests.
-# ID of the manifest, needed if you want to filter by it later on (e.g. on
-# custom publishers).
-- id: austintalbot/fx
-
-  # Name for the manifest.
-  #
-  # Templates: allowed.
-  name_template: "austintalbot/fx:{{ .Version }}"
-
-  # Image name to be added to this manifest.
-  #
-  # Templates: allowed.
+- name_template: "austintalbot/fx:{{ .Tag }}"
   image_templates:
-  - "austintalbot/fx:{{ .Version }}-amd64"
-  - "austintalbot/fx:{{ .Version }}-arm64v8"
-
-  skip_push: false
-
-  use: docker
-
+  - "austintalbot/fx:{{ .Tag }}-amd64"
+  - "austintalbot/fx:{{ .Tag }}-arm64"
 changelog:
   sort: asc
   filters:
