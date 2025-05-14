@@ -14,7 +14,7 @@ import (
 	"github.com/muesli/termenv"
 	"github.com/stretchr/testify/require"
 
-	"github.com/antonmedv/fx/internal/jsonx"
+	"github.com/austintalbot/fx/internal/jsonx"
 )
 
 func init() {
