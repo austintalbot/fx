@@ -15,6 +15,13 @@ before:
   # you may remove this if you don't need go generate
   - go generate ./...
 
+upx:
+# Whether to enable it or not.
+#
+# Templates: allowed.
+- enabled: true
+  compress: best
+
 builds:
 - env:
   - CGO_ENABLED=0
@@ -68,3 +75,16 @@ release:
     ---
 
     Released by [GoReleaser](https://github.com/goreleaser/goreleaser).
+
+sboms:
+- id: fx
+  documents:
+  - "{{ .Binary }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}.sbom.json"
+  cmd: syft
+  args: [ "$artifact", "--output", "cyclonedx-json=$document" ]
+  artifacts: binary
+  ids:
+  - fx
+
+# Whether to enable the size reporting or not.
+report_sizes: true

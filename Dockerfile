@@ -11,7 +11,6 @@ RUN upx --best fx
 
 FROM scratch
 
-
 COPY --from=builder /go/fx /bin/fx
 
 WORKDIR /data
