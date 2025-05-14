@@ -1,18 +1,17 @@
+ARG BUILDPLATFORM
 FROM golang:tip-alpine3.21 AS builder
 
-WORKDIR /go
+WORKDIR /app
 
-COPY . .
 RUN apk update && apk add upx
 
-RUN go mod download
-RUN go build -o fx .
+COPY fx fx
 RUN upx --best fx
 
 FROM scratch
 
 
-COPY --from=builder /go/fx /bin/fx
+COPY --from=builder /app/fx /bin/fx
 
 WORKDIR /data
 

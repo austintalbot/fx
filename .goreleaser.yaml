@@ -35,15 +35,18 @@ archives:
 dockers:
 - image_templates:
   - "austintalbot/fx:{{ .Tag }}-amd64"
-
   build_flag_templates:
   - "--platform=linux/amd64"
   - "--build-arg=BINARY=dist/fx_linux_amd64_v1/fx"
+  - "--load"
+  dockerfile: .goreleaser.dockerfile
 - image_templates:
   - "austintalbot/fx:{{ .Tag }}-arm64"
   build_flag_templates:
   - "--platform=linux/arm64"
   - "--build-arg=BINARY=dist/fx_linux_arm64_v1/fx"
+  - "--load"
+  dockerfile: .goreleaser.dockerfile
   goarch: arm64
 
 docker_manifests:
@@ -51,6 +54,7 @@ docker_manifests:
   image_templates:
   - "austintalbot/fx:{{ .Tag }}-amd64"
   - "austintalbot/fx:{{ .Tag }}-arm64"
+
 changelog:
   sort: asc
   filters:
