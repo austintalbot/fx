@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/antonmedv/fx/internal/jsonpath"
+	"github.com/austintalbot/fx/internal/jsonpath"
 )
 
 func Test_SplitPath(t *testing.T) {

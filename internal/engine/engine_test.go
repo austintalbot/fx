@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/antonmedv/fx/internal/engine"
-	"github.com/antonmedv/fx/internal/jsonx"
+	"github.com/austintalbot/fx/internal/engine"
+	"github.com/austintalbot/fx/internal/jsonx"
 	"github.com/stretchr/testify/assert"
 )
 

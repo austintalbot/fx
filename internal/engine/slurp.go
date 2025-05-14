@@ -3,7 +3,7 @@ package engine
 import (
 	"io"
 
-	"github.com/antonmedv/fx/internal/jsonx"
+	"github.com/austintalbot/fx/internal/jsonx"
 )
 
 func Slurp(parser Parser, writeErr func(string)) (Parser, bool) {

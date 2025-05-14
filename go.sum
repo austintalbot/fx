@@ -2,8 +2,6 @@ github.com/Masterminds/semver/v3 v3.2.1 h1:RN9w6+7QoMeJVGyfmbcgs28Br8cvmnucEXnY0
 github.com/Masterminds/semver/v3 v3.2.1/go.mod h1:qvl/7zhW3nngYb5+80sSMF+FG2BjYrf8m9wsX0PNOMQ=
 github.com/antonmedv/clipboard v1.0.1 h1:z9rRBhSKt4lDb6uNcMykUmNbspk/6v07JeiTaOfYYOY=
 github.com/antonmedv/clipboard v1.0.1/go.mod h1:3jcOUCdraVHehZaOsMaJZoE92MxURt5fovC1gDAiZ2s=
-github.com/antonmedv/fx v0.0.0-20250513050515-ff1ca3a070a8 h1:K/bPIMfVol/Z47FSX+yPMAnGmuKgTTCqbTaDAN3krNc=
-github.com/antonmedv/fx v0.0.0-20250513050515-ff1ca3a070a8/go.mod h1:SynsXaijGHWfmRplsxg00UUcIAwBfClFxSK/oRpqypg=
 github.com/atotto/clipboard v0.1.4 h1:EH0zSVneZPSuFR11BlR9YppQTVDbh5+16AmcJi4g1z4=
 github.com/atotto/clipboard v0.1.4/go.mod h1:ZY9tmq7sm5xIbd9bOK4onWV4S6X0u6GY7Vn0Yu86PYI=
 github.com/aymanbagabas/go-osc52/v2 v2.0.1 h1:HwpRHbFMcZLEVr42D4p7XBqjyuxQH5SMiErDT4WkJ2k=
