@@ -25,13 +25,13 @@ import (
 	"github.com/charmbracelet/lipgloss"
 	"github.com/mattn/go-isatty"
 
-	"github.com/antonmedv/fx/internal/complete"
-	"github.com/antonmedv/fx/internal/engine"
-	"github.com/antonmedv/fx/internal/fuzzy"
-	"github.com/antonmedv/fx/internal/jsonpath"
-	. "github.com/antonmedv/fx/internal/jsonx"
-	"github.com/antonmedv/fx/internal/theme"
-	"github.com/antonmedv/fx/internal/utils"
+	"github.com/austintalbot/fx/internal/complete"
+	"github.com/austintalbot/fx/internal/engine"
+	"github.com/austintalbot/fx/internal/fuzzy"
+	"github.com/austintalbot/fx/internal/jsonpath"
+	. "github.com/austintalbot/fx/internal/jsonx"
+	"github.com/austintalbot/fx/internal/theme"
+	"github.com/austintalbot/fx/internal/utils"
 )
 
 var (

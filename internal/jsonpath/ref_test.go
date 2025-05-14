@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/antonmedv/fx/internal/jsonpath"
+	"github.com/austintalbot/fx/internal/jsonpath"
 )
 
 func TestParseSchemaRef(t *testing.T) {

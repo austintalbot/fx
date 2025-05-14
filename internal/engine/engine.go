@@ -11,7 +11,7 @@ import (
 
 	"github.com/dop251/goja"
 
-	"github.com/antonmedv/fx/internal/jsonx"
+	"github.com/austintalbot/fx/internal/jsonx"
 )
 
 //go:embed stdlib.js

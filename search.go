@@ -1,7 +1,7 @@
 package main
 
 import (
-	. "github.com/antonmedv/fx/internal/jsonx"
+	. "github.com/austintalbot/fx/internal/jsonx"
 )
 
 type search struct {

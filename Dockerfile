@@ -1,18 +1,15 @@
-FROM golang:latest as builder
+FROM golang:tip-alpine3.21 AS builder
 
 WORKDIR /go
 
-COPY go.mod go.sum ./
+COPY . .
+RUN apk update && apk add upx
 
 RUN go mod download
-
-COPY . .
-
 RUN go build -o fx .
+RUN upx --best fx
 
-FROM alpine
-
-RUN apk add --update nodejs
+FROM scratch
 
 COPY --from=builder /go/fx /bin/fx
 

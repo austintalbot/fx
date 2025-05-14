@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	. "github.com/antonmedv/fx/internal/theme"
+	. "github.com/austintalbot/fx/internal/theme"
 	"github.com/dop251/goja"
 )
 

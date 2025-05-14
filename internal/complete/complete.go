@@ -11,8 +11,8 @@ import (
 	"github.com/dop251/goja"
 	"github.com/goccy/go-yaml"
 
-	"github.com/antonmedv/fx/internal/engine"
-	"github.com/antonmedv/fx/internal/shlex"
+	"github.com/austintalbot/fx/internal/engine"
+	"github.com/austintalbot/fx/internal/shlex"
 )
 
 var flags = []string{
